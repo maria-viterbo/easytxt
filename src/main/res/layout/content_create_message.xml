@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.easytxt.EditMessageActivity"
+    tools:showIn="@layout/activity_create_message">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Message"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"/>
+
+            <EditText
+                android:id="@+id/messageInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage"
+                android:hint="Enter message"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Days of week"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/dayButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ToggleButton
+                android:id="@+id/MondayToggle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="Mon"
+                android:textOn="Mon"
+                android:textSize="10dp"
+                android:textAllCaps="false"/>
+
+            <ToggleButton
+                android:id="@+id/TuesdayToggle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="Tue"
+                android:textOn="Tue"
+                android:textSize="10dp"
+                android:textAllCaps="false"/>
+
+            <ToggleButton
+                android:id="@+id/WednesdayToggle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="Wed"
+                android:textOn="Wed"
+                android:textSize="10sp"
+                android:textAllCaps="false"/>
+
+            <ToggleButton
+                android:id="@+id/ThursdayToggle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="Thu"
+                android:textOn="Thu"
+                android:textSize="10dp"
+                android:textAllCaps="false"/>
+
+            <ToggleButton
+                android:id="@+id/FridayToggle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="Fri"
+                android:textOn="Fri"
+                android:textSize="10dp"
+                android:textAllCaps="false"/>
+
+            <ToggleButton
+                android:id="@+id/SaturdayToggle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="Sat"
+                android:textOn="Sat"
+                android:textSize="10dp"
+                android:textAllCaps="false"/>
+
+            <ToggleButton
+                android:id="@+id/SundayToggle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="Sun"
+                android:textOn="Sun"
+                android:textSize="10dp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Time"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="80dp"
+            >
+
+            <TextView
+                android:text="From"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/startTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:text="To"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/endTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:text="Save"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:drawableTint="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/custom_button"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                style="@style/SmallButton"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

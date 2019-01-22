@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EasyTXT</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_message">Create Message</string>
+    <string name="title_activity_message_list">MessageListActivity</string>
+    <string name="title_activity_quick_tap">QuickTap</string>
+</resources>
